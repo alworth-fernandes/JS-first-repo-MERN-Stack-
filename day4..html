@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>First Heading</h1>
+    <h2>Second Heading</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, aliquid repellendus delectus sapiente molestias excepturi, eligendi voluptatum accusantium voluptate deleniti molestiae ab animi voluptas velit doloremque dolorum non error adipisci!</p>
+</body>
+<script>
+    const firstH = document.createElement('h1'); //create
+    firstH.id = "first-heading"; // id
+    firstH.className = "para";  //class
+
+    const textNode = document.createTextNode("Hello World!,Welcome to my CRAZY ASF CODEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEe");
+
+    firstH.appendCh ild(textNode); //appendchild
+    document.body.appendChild(firstH); //appendchild
+    const SecondH = document.querySelector('h2');
+    // SecondH.remove();
+    SecondH.replaceWith(firstH);
+    // console.log(SecondH);
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type = "submit" style ="padding: : 5px; border-radius: 10px; font-size: 20px; text-align: center;">
+        BLUE
+    </button>
+    <button type = "submit" style ="padding: : 5px; border-radius: 10px; font-size: 20px; text-align: center;">
+        RED
+    </button>
+    <button type = "submit" style ="padding: : 5px; border-radius: 10px; font-size: 20px; text-align: center;">
+        GREEN
+    </button>
+</body>
+<script>
+    const blueBtn = document.getElementsByTagName('button');
+    console.log(blueBtn);
+    const redBtn = document.getElementsByTagName('button');
+    console.log(redBtn);
+    const greenBtn = document.getElementsByTagName('button');
+    console.log(greenBtn);
+    array.forEach(element => {
+        if blueBtn.
+    });
+    btn[0].addEventListener('click', () => alert("It's Alworth the GOAT"))
+</script>
+</html> -->
+
+
+<!-- Sir's code -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button id="green" style="padding: 20px; font: size 10px; text-align: center;align-self: center; border-radius: 50%; background-color:green;">green</button>
+   <button id="red" style="padding: 20px; font: size 10px; text-align: center;align-self: center; border-radius: 50%;background-color: red;">red</button>
+   <button id="blue" style="padding: 20px; font: size 10px; text-align: center;align-self: center; border-radius: 50%; background-color: blue;">blue</button>
+</body>
+<script>
+    const btns = document.querySelectorAll('button');
+    const body = document.querySelector('body');
+    console.log(btns)
+    console.log(body)
+    btns.forEach((btn) => {
+        btn.addEventListener('click',(e) =>{
+            console.log(e.target.id);
+            if(e.target.id === 'green'){
+                body.style.backgroundColor = e.target.id;
+            }
+            else if(e.target.id === 'red'){
+                body.style.backgroundColor = e.target.id;
+            }
+            else if(e.target.id === 'blue'){
+                body.style.backgroundColor = e.target.id;
+            }
+        })
+    });
+  </script>
+</html>

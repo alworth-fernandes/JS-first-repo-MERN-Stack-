@@ -1,0 +1,61 @@
+<!-- GPT Multcolor code -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Buttons</title>
+  <style>
+    body {
+      text-align: center;
+      padding-top: 100px;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s ease;
+    }
+
+    .color-btn {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .color-btn[data-color="red"] {
+      background-color: red;
+      color: white;
+    }
+
+    .color-btn[data-color="green"] {
+      background-color: green;
+      color: white;
+    }
+
+    .color-btn[data-color="blue"] {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Choose a Background Color</h1>
+
+  <button class="color-btn" data-color="red">Red</button>
+  <button class="color-btn" data-color="green">Green</button>
+  <button class="color-btn" data-color="blue">Blue</button>
+
+  <script>
+    // Attach click listeners to each button
+    document.querySelectorAll(".color-btn").forEach(function(button) {
+      button.addEventListener("click", function(event) {
+        const color = event.target.getAttribute("data-color");
+
+        // Optional condition check
+        if (["red", "green", "blue"].includes(color)) {
+          document.body.style.backgroundColor = color;
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
